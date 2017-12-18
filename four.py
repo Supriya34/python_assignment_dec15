@@ -1,15 +1,10 @@
-def fname():
-    name = str(input("Enter your full name : "))
-    namesplit = name.split(' ')
+def solve_for_y(x_values):
+    m, c = 45, 0.5
 
-    for i in range(len(namesplit)):
-        if i == 0:
-            print("First name: {:s}".format(namesplit[0]))
-        elif i == len(name_split) - 1:
-            print("Last name: {:s}".format(namesplit[len(namesplit)-1]))
-        else:
-            middle_name = namesplit[i]
-            print("Middle name: {:s}".format(middle_name))
+    for x in x_values:
+        y = m*x + c
+        print("Value of y for m = 45, c = 0.5 and x = {:.2f} is {:.2f}.".format(x, y))
 
 
-fname()
+x_value = [1, 2.3, 5.6, 7, 78]
+solve_for_y(x_value)
